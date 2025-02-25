@@ -28,6 +28,8 @@ Repositório com script Python para gerar dados fictícios de leads realistas pa
   - `CPF/CNPJ` válidos e formatados
   - `Endereço completo` (Bairro, Estado, País, CEP)
   - `Origem do Cliente` com palavra aleatória
+  - `Site do Cliente` URL
+  - `Empresa` Nomes falsos de empresas
 
 ## 📦 Requisitos
 

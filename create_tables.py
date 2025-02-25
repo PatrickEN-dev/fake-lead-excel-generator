@@ -102,6 +102,7 @@ def criar_excel(num_linhas):
             "SKU",
             "CPF/CNPJ",
             "Bairro",
+            "Cidade",
             "Estado",
             "País",
             "CEP",
@@ -118,6 +119,7 @@ def criar_excel(num_linhas):
             "SKU",
             "CPF/CNPJ",
             "Neighborhood",
+            "City",
             "State",
             "Country",
             "Postcode",
@@ -134,6 +136,7 @@ def criar_excel(num_linhas):
             "SKU",
             "NIF",
             "Barrio",
+            "Ciudad",
             "Estado",
             "País",
             "Código Postal",
@@ -157,6 +160,7 @@ def criar_excel(num_linhas):
                 fake_brasil.cpf() if random.random() < 0.5 else fake_brasil.cnpj()
             )
             bairro = fake_brasil.bairro()
+            cidade = fake_brasil.city()
             estado = fake_brasil.estado_sigla()
             pais = fake_brasil.country()
             cep = fake_brasil.postcode()
@@ -172,6 +176,7 @@ def criar_excel(num_linhas):
                 sku_produto,
                 cpf_cnpj,
                 bairro,
+                cidade,
                 estado,
                 pais,
                 cep,
@@ -197,6 +202,7 @@ def criar_excel(num_linhas):
                 if hasattr(fake_geral, "neighborhood")
                 else fake_geral.city()
             )
+            cidade = fake_geral.city()
             estado = fake_geral.state_abbr()
             pais = fake_brasil.country()
             if "Brasil" in pais:
@@ -214,6 +220,7 @@ def criar_excel(num_linhas):
                 sku_produto,
                 cpf_cnpj,
                 bairro,
+                cidade,
                 estado,
                 pais,
                 cep,
@@ -233,6 +240,7 @@ def criar_excel(num_linhas):
             nif = gerar_nif_espanhol()
             # Para "barrio" usamos o nome de uma rua como exemplo
             bairro = fake_es.street_name()
+            cidade = fake_es.city()
             # Seleciona aleatoriamente uma comunidade/autonomía espanhola
             estados_es = [
                 "Andalucía",
@@ -268,6 +276,7 @@ def criar_excel(num_linhas):
                 sku_produto,
                 nif,
                 bairro,
+                cidade,
                 estado,
                 pais,
                 cep,
