@@ -25,7 +25,9 @@ Repositório com script Python para gerar dados fictícios de leads realistas pa
   - `E-mail` corporativo/Personalizado
   - `Telefone` com DDD válido
   - `Produto` com nome composto (2 palavras)
+  - `Produto SKU` no formato adequado
   - `CPF/CNPJ` válidos e formatados
+  - `Cidade` baseada na tabela
   - `Endereço completo` (Bairro, Estado, País, CEP)
   - `Origem do Cliente` com palavra aleatória
   - `Site do Cliente` URL
@@ -67,7 +69,7 @@ Repositório com script Python para gerar dados fictícios de leads realistas pa
 
 5. O arquivo será gerado no formato:
    ```bash
-   fake_data_1000_lines.xlsx
+   fake_data_en_1000_lines.xlsx
    ```
 
 ## 🗂 Estrutura dos Dados
@@ -78,7 +80,9 @@ Repositório com script Python para gerar dados fictícios de leads realistas pa
 | Email             | String       | maria.oliveira@email.com             |
 | Phone Number      | String       | (11) 98765-4321                      |
 | Product Name      | String       | Software Empresarial                 |
+| Product SKU       | String       | SKU-8161-VT                          |
 | CPF/CNPJ          | String       | 123.456.789-09 ou 12.345.678/0001-90 |
+| Cidade            | String       | Botucatu                             |
 | Bairro            | String       | Moema                                |
 | Estado            | String       | São Paulo                            |
 | País              | String       | Brasil                               |
